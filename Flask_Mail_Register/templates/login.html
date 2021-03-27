@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block body %}
+<h3>Oturum Açma</h3>
+<hr>
+<form action="/login" method="post">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+      Kullanıcı Adı : <input id="username" name="username" type="text" placeholder="Kullanıcı adı" class="textbox"/></br></br>
+      Kullanıcı Şifresi : <input id="password" name="password" type="password" placeholder="Şifrenizi Girin" class="textbox"/></br></br>
+      <input type="submit" class="btn btn-primary" value="Giriş">
+      <p>Parolanızımı unuttunuz ? <a class="bottom" href="/update">Sıfırlamak için tıklayın</a></p>
+  </form>
+</h2>
+<p class="bottom">Hesabınız yokmu?  <a class="bottom" href="/register">Kayıt için tıklayın</a></p>
+</div>
+</div>
+</div>
+{% endblock body %}

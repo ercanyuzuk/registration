@@ -1,0 +1,111 @@
+{% extends "layout.html" %} {% block body %}
+<h3>Kayıt Ol</h3>
+<hr />
+<form class="form-horizontal" action="/verify" method="POST">
+  <fieldset>
+    <div id="legend">
+      <legend class="">Kayıt Olmak için Formu eksiksiz doldurun</legend>
+    </div>
+    <div class="control-group">
+      <!-- Username -->
+      <label class="control-label" for="name">İsim</label>
+      <div class="controls">
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="İsmizini girin"
+          size="30"
+          required="required"
+        />
+      </div>      
+    </div>
+    <div class="control-group">
+      <!-- Username -->
+      <label class="control-label" for="surname">Soyad</label>
+      <div class="controls">
+        <input
+          type="text"
+          id="surname"
+          name="surname"
+          placeholder="Soyadınızı girin"
+          size="30"
+          required="required"
+        />
+      </div>
+    </div>
+
+    <div class="control-group">
+      <!-- Username -->
+      <label class="control-label" for="username">Kullanıcı Adı</label>
+      <div class="controls">
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Kullanıcı Adınızı girin"
+          size="30"
+          required="required"
+        />
+      </div>
+    </div>
+    <p style="color:red">{{mesaj}}</p>
+    <div class="control-group">
+      <!-- E-mail -->
+      <label class="control-label" for="email">E-mail</label>
+      <div class="controls">
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Mail Adresini girin"
+          size="30"
+          required="required"
+        />
+      </div>
+      <p style="color:red">{{mesaj1}}</p>
+    </div>
+
+    <div class="control-group">
+      <!-- Password-->
+      <label class="control-label" for="password">Şifre</label>
+      <div class="controls">
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Şifrenizi Girin"
+          size="30"
+          required="required"
+        />
+      </div>
+      <p style="color:red">{{mesaj2}}</p>
+    </div>
+
+    <div class="control-group">
+      <!-- Password -->
+      <label class="control-label" for="password_confirm"
+        >Şifreyi Doğrula</label
+      >
+      <div class="controls">
+        <input
+          type="password"
+          id="password_confirm"
+          name="password_confirm"
+          placeholder="Şifrenizi tekrar Yazın"
+          size="30"
+          required="required"
+        />
+      </div>
+    </div>
+    <br>
+    <div class="control-group">
+      <!-- Button -->
+      <div class="controls">
+        <button class="btn btn-success">Register</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
+
+{% endblock body %}

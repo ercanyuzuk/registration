@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block body %}
+<h2>Şifre Sıfırlama</h2>
+<hr>
+<form action="/control" method="post">
+    <label for="email">Mail Adresiniz:</label>
+    <input type="email" name="email">
+    <input type="submit" value="Gönder">
+{% endblock body %}

@@ -1,0 +1,9 @@
+{% extends "layout.html" %} {% block body %}
+<h3>Doğrulama Sayfası</h3>
+<hr />
+<form action="/validate" method="post">
+    <h1>Doğrulama Kodu Mail Adresinize Gönderilmiştir </h1>
+    Kodu girin: <input type="text" name="otp">
+    <input type="submit" value="Submit">
+</form>
+{% endblock body %}
